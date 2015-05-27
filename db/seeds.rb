@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+puts "Creating 'nouns'"
+10000.times do
+  Noun.create(name: Faker::Name.name)
+end
+
+puts "Creating 'verbs'"
+10000.times do
+  Verb.create(name: Faker::Name.name)
+end
